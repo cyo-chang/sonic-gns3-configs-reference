@@ -1,0 +1,21 @@
+{
+"ztp": {
+  "01-download": {
+    "files": [
+      {
+        "url": {
+          "source": "tftp://10.10.0.5/frr/leaf-1_frr.conf",
+	        "destination": "/etc/sonic/frr/frr.conf"
+        }
+      }
+    ]
+  },
+  "02-configdb-json": {
+    "url": {
+      "source": "tftp://10.10.0.5/configs/leaf-1_config_db.json",
+      "destination": "/etc/sonic/config_db.json"
+    },
+    "reboot-on-success": true
+  }
+}
+}
